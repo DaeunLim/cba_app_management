@@ -1,5 +1,5 @@
 import { EColor } from "@styles/color";
-import { Title3,  body1, body2 } from "@styles/font";
+import { Title0, Title1, Title2, Title3,  Title4,  body1, body2, body3 } from "@styles/font";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -189,4 +189,125 @@ export const TextInput = styled.input`
   &::placeholder {
     color: ${EColor.TEXT_600};
   }
+`;
+
+export const Box1 = styled.div`
+  display: flex;
+  width: 270px;
+  height: 150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
+`;
+/** margin: 0 30px; */
+
+
+export const TextBox = styled.div`
+  ${body2};
+  flex: 1;
+  text-align: center;
+`;
+
+export const Numbers = styled.div`
+  ${body2}
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+`;
+
+export const Box2 = styled.div`
+  display: flex;
+  width: 350px;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+`;
+
+export const Box3 = styled.div`
+  display: flex;
+  width: 170px;
+  height: 400px;
+  background-color: white;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: center;
+  
+  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+`;
+
+export const FormContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #FAFAFA;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+`;
+
+export const OutterContainer = styled.div`
+  display: flex;
+	flex-direction: column;
+	width: 100%;
+  column: 100%;
+	align-items: center;
+  gap: 25px;
+`;
+
+export const InnerContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+
+`;
+
+
+/*export const InnerContainer = styled.div`
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+padding: 32px 32px 32px 32px;
+gap: 28px;
+`;*/
+
+export const DDayTest = styled.div`
+  ${Title0};
+  letter-spacing: 1px;
+  color: ${EColor.TEXT_800};
+  user-select: none;
+`;
+
+export const StatusTitle = styled.div`
+  ${Title2}
+  color: ${EColor.TEXT_800};
+`;
+
+export const CountTitle = styled.div`
+  ${Title3}
+  color: ${EColor.TEXT_800};
+`;
+
+export const Position = styled.div`
+  ${body3}
+  color: white;
+  background-color: ${EColor.COLOR_PRIMARY_SUB2};
+  border-radius: 20px;
+  
+  text-align: center;
+  flex: 1;
 `;
